@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Why Use Reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A powerful framework for easily creating beautiful presentations or resumes using HTML">
+		<meta name="author" content="Jenny Pletner">
+<!--forked from https://github.com/hakimel/reveal.js from Hakim El Hattab-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+        <!--set your theme here-->
+		<link rel="stylesheet" href="css/theme/jenny.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+
+	<body>
+
+        <header>
+            <ul>
+                <li><a href="https://twitter.com/jpletner" target="_blank"><img width="30px" src="http://cdn.business2community.com/wp-content/uploads/2015/07/Twitter-icon.png.png"></a></li>
+                <li><a href="https://www.linkedin.com/pub/jenny-pletner/2/396/44" target="_blank"><img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/2000px-Linkedin_icon.svg.png"></a></li>
+                <li><a href="https://github.com/jpletner" target="_blank"><img width="30px" src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Github-icon.png"></a></li>
+            </ul>
+        </header>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background=""> <!--cover-->
+                    <h1><span class="red">Reveal</span>.js</h1>
+                    <h3><span class="red">The HTML Presentation Framework</span></h3>
+					<p>
+						<small>Created by <a href="https://www.linkedin.com/pub/jenny-pletner/2/396/44" target="_blank">Jenny Pletner</a> / <a href="http://twitter.com/jpletner" target="_blank">@jpletner</a></small>
+					</p>
+				</section> <!--cover-->
+                <section> <!--The Plan-->
+                    <div class="theplan">
+                    <h1>The Plan</h1>
+                        <p><a href="#/2">What is it?</a></p>
+                        <p><a href="#/2/1">Why use it?</a></p>
+                        <p><a href="#/2/2">How to use it?</a></p>
+                        <p><a href="#/3">Features <span class="red">&</span> Functionality</a></p>
+                        <p><a href="#/23">Sample Presentations</a></p>
+                        <p>Questions?</p>
+                    </div>
+                    <aside class="notes">Internal links</aside>
+                </section><!--End the Plan-->
+                
+                <section data-background=""><!--Intro: What, Why, How-->
+					<section><!--What is it-->
+                        <h1>What is it<span class="red">?</span></h1> 
+                        <ul>
+                            <li><span class="red">Reveal</span><span class="green">.js</span> is a framework for easily creating beautiful presentations using HTML</li> 
+                            <li>Features include nested slides, colored code snippets, built-in themes and transistions, speaker notes, and support for mobile gestures</li>
+                            <li>Developed by the amazing <a href="http://hakim.se" target="_blank">Hakim El Hattab</a>, from Stockholm, Sweden</li>
+                        </ul>
+                        <aside class="notes">broad range of features, nested = vertical and horizontal slides, markup means easily display colored snippets of code, Javascript API, mobile gestures like pinch and slide. Hakim also created Slides.com which we'll get too. Forked his feature slides for this presentation.</aside>
+                    </section><!--What is it-->
+                    
+                    <section><!--Why use it-->
+                            <h1>Why use it<span class="red">?</span></h1>
+                            <h5>HTML presentations add to your credibility as a software developer</h5>    
+                            <ul>
+                                <li>Reveal.js presentations can be uploaded to github as a respository</li>
+                                <li>They can be added to your online portfolio</li>
+                                <li>Reveal.js can also be used to create interactive online resumes</li>
+                            </ul>
+                        <aside class="notes">All which add to your credibility as a developer. Not to mention they are easy to create!</aside>
+                    </section><!--Why use it-->
+                    
+                    <section data-transition="slide-in fade-out"> <!--How to use it:Basic-->
+                            <h1>How to use it<span class="red">?</span></h1>
+                            <h3>Basic Set-up:</h3>
+                            <ol>
+                                <li> Download <a href="https://github.com/hakimel/reveal.js/releases" target="_blank">reveal.js</a> from the github repo.</li> 
+                                <li>Edit the index.html and reveal.css files in your text editor</li> 
+                                <li>Launch the index.html file directly in your browser.</li>
+                            </ol>
+                    </section> <!--How to use it:Basic-->
+                        
+                    <section data-transition="fade-out"> <!--How to use it:Full-->
+                            <h1>How to use it<span class="red">?</span></h1>
+                                <h3>Full Set-up:</h3> 
+                                <ul>
+                                    <li>Some reveal.js features, like speaker notes view, require that presentations run from a local web server.</li>
+                                    <li><a href="https://nodejs.org/en/">Node.JS</a> and <a href="http://gruntjs.com/">Grunt JS</a> installation required</li>
+                                    <li>Instructions provided here: <a href="https://github.com/hakimel/reveal.js#installation" target="_blank">github.com/hakimel/reveal.js</a></li>
+                                </ul><br><br>
+                        <p><span class="green">Note - these two videos will guide you through the Grunt install: </span><a href="https://www.youtube.com/watch?v=DlL9knQac0k">Grunt JS Install Video 1</a> | <a href="https://www.youtube.com/watch?v=63oC_rCNNSE">Grunt JS Install Video 2</a></p>
+                        <aside class="notes">I am using the full set up so I can access some speaker notes. If anyone needs help with the installation, please feel free to ask.</aside>
+                    </section> <!--How to use it:Full-->
+                        
+                    <section data-transition="fade-out"> <!--How to use it:Slides-->
+                            <h1>How to use it<span class="red">?</span></h1>
+                            <h3>Online Visual Editor:</h3> 
+                            <ul>
+                                <li><a href="http://slides.com" target="_blank">Slides.com</a> is an fully featured, online editor for those of you who prefer a user-friendly GUI.</li>
+                                <li>Host your presentations on <a href="http://slides.com" target="_blank">Slides.com</a> if you don't want to use your own domain or a site like Heroku.</li>
+                                <li>Sample presentations can be also found and forked from <a href="http://slides.com" target="_blank">Slides.com</a>.</li>
+                                <li>Here's a quick demo...</li>
+                            </ul>
+                            <aside class="notes">Also developed by Hakim El Hattab. It even equips you with some beautiful transitions and themes and comes with a multitude of other features to help you out.
+                            </aside>
+                    </section> <!--How to use it:Slides-->
+                    
+                    <!--How to use it:Slides Video-->
+                    <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+					
+                    </section> <!--How to use it:Slides Video-->
+                    
+				</section><!--Intro: What, Why, How-->
+                
+                <section> <!--F&F-->
+                    <h1>Features <span class="red">&</span> Functionality</h1>
+                </section> <!--F&F-->
+                
+                <section style="text-align: left;"> <!--View & Functionality-->
+					<h2>Point of View</h2>
+                    <p><span class="green">Slide Over:</span> Press <span class="red">ESC</span> to enter the slide overview.</p>
+					<p><span class="green">Zoom:</span> Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.</p>
+                    <p><span class="green">Fullscreen mode:</span> Press <span class="red">»F«</span> on your keyboard to show your presentation in fullscreen mode.</p>
+                    <p><span class="green">Pause:</span> Press B or <span class="red">.</span> on your keyboard to pause the presentation.</p>
+                <aside class="notes">You can even override these default key bindings and create your own. See reveal.js repo readme for more info.</aside>
+				</section> <!--View & Functionality-->
+            
+                <section> <!--Pretty code-->
+					<h2>Pretty Code</h2>
+					<pre><code class="ruby" data-trim contenteditable>
+def self.all
+    results = DB.exec("SELECT * FROM tasks;")
+    tasks = []
+    results.each do |result|
+      name = result['name']
+      list_id = result['list_id'].to_i
+      tasks << Task.new(name, list_id)
+    end
+    tasks
+end
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/" target="_blank">highlight.js</a>.</p>
+                    <pre><code><!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css"></code></pre>
+                    <pre><code><pre><code class="ruby">
+    def method_name do
+        enter code here
+    end
+</code></pre></code></pre>
+                <aside class="notes">link to highlight.js report in head. define language in class name.</aside>
+                    
+				</section><!--Pretty code-->
+                
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+                        <p>Use the <span class="red"><em>Space</em></span> key to navigate through all slides.</p>
+<pre><code><section>
+    <section>Nested Slide #1</section>
+    <section>Nested Slide #2</section>
+    <section>Nested Slide #3</section>
+</section></code></pre>
+						<a href="#" class="navigate-down">
+							<img width="200" data-src="http://theprofitsecrets.com/picso/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img width="200" data-src="http://theprofitsecrets.com/picso/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+                
+                <section data-background=""> <!-- Mobile -->
+					<h2>Touch & Orientation Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides. Even use pinch and slide to zoom in & out. 
+					</p>
+                    <aside class="notes">reveal.js built to be responsive to orientation changes and allows for mobile gestures.</aside>
+                </section> <!-- Mobile -->
+
+				 <!-- Fragments -->
+					<section id="fragments">
+						<div  class="addtopmargin">
+                        <h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+<pre><code><section id="fragments">
+    <p class="fragment">Fragment 1</p>
+    <p class="fragment">Fragment 2</p>
+    <p class="fragment">Fragment 3</p>
+</section></code></pre>
+                    </div>
+						<aside class="notes">This slide has fragments which are also stepped through in the notes window.</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p class="fragment grow">grow</p> <pre><code><p class="fragment grow">grow</p></code></pre>
+						<p class="fragment shrink">shrink</p> <pre><code><p class="fragment shrink">grow</p></code></pre>
+						<p class="fragment fade-out">fade-out</p> <pre><code><p class="fragment fade-out">grow</p></code></pre>
+						<p class="fragment current-visible">now you see it</p> <pre><code><p class="fragment current-visible">grow</p></code></pre>
+						<p class="fragment highlight-red">highlight-red</p> <pre><code><p class="fragment highlight-red">grow</p></code></pre>
+					</section>
+				<!-- Fragments -->
+		
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+                    <pre><code>transition: 'default', // none/fade/slide/convex/concave/zoom</code></pre>
+                    <aside class="notes">set in configuration section at the end of the html document.</aside>
+				</section>
+
+                <section>
+					<section data-background="#dddddd">
+						<h2><span class="red shadow">Slide Backgrounds</span></h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+                        <pre><code style="word-wrap: break-word;">&lt;section data-background="#dddddd"></code></pre>
+						<a href="#" class="navigate-down">
+							<img width="200" data-src="http://theprofitsecrets.com/picso/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://drscdn.500px.org/photo/54620844/m%3D2048/e71c918952e3b493fd67c0d4b9e0b915">
+						<h2><span class="red shadow">Image Backgrounds</span></h2>
+						<pre><code>&lt;section data-background="goatsinatree.png"&gt;</code></pre>
+					</section>
+					<section data-background="http://bgfons.com/upload/tile_texture3096.jpg" data-background-repeat="repeat" data-background-size="100px">
+						<h2><span class="shadow">Tiled Backgrounds</span></h2>
+						<pre><code style="word-wrap: break-word;">&lt;section data-background="tiledimage.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+                            <h2><span class="shadow">Video Backgrounds</span></h2>
+							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://www.clipartbest.com/cliparts/xTg/4ea/xTg4eaBTA.gif">
+                        <h2><span class="shadow">... and GIFs!</span></h2>
+					</section>
+				</section>
+                
+<!--
+                <section data-transition="slide" data-background="#A2AB58" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+                
+-->
+				<section data-transition="slide" data-background="#67BCDB" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+                
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/jenny.css'); return false;">Jenny(custom)</a>
+					</p>
+                    <pre><code><link rel="stylesheet" href="css/theme/jenny.css" id="theme"></code></pre>
+                </section>
+                
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+<pre><code><ul>
+    <li>List item #1</li>
+    <li>List item #2</li>
+    <li>List item #3</li>
+</ul>
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+<pre><code><ol>
+    <li>List item #1</li>
+    <li>List item #2</li>
+    <li>List item #3</li>
+</ol>
+</code></pre>
+				</section>
+
+				<section>
+                    <div  class="addtopmargin">
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th><span class="red">Item</span></th>
+								<th><span class="red">Value</span></th>
+								<th><span class="red">Quantity</span></th>
+                            </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							<tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							<tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							<tr>
+						</tbody>
+					</table>
+<pre><code><table>
+    <tbody>
+    <tr>
+        <td>Row 1</td>
+        <td>Row 2</td>
+        <td>Row 3</td>
+    </tr>
+    </tbody>
+</table></div></code></pre>
+				</section>
+
+				<section>
+					<section>
+                    <h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						<span class="red">&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</span></q></p>
+                        <pre><code><q>Inline quote goes here</q></pre></code>
+                    </section>
+                    <section>
+                    <h2>Clever Quotes</h2>
+					<p>and block:</p>
+                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"><span class="red">&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;</span>
+					</blockquote>
+                        <pre><code><blockquote>Block quote goes here</blockquote></pre></code>
+                    </section>
+				</section>
+
+<!--
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.</p>
+                        <pre><code><a href="#/2/2">Link</a> OR <a href="#/some-slide">Link</a></pre></code>		
+				</section>
+-->
+                <section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <span class="red"><em>S</em></span> key to try it out.</p>
+                    <pre><code><aside class="notes">Enter speaker notes here.</aside></code></pre>
+					<aside class="notes">
+						Notes and timer are very useful for 5 minute lighting talks or even our 10 minute presentations. Must have the full set-up installtion to access this feature.
+					</aside>
+				</section>
+
+<!--
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export" target="_blank">exported to PDF</a>, here's an example:</p>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+-->
+
+<!--
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+-->
+                
+                <section> <!--Configuration-->
+					<div  class="addtopmargin">
+                    <h2>Configuration</h2>
+                    <p>The last step to make the presentation work is by adding the following configuration:</p>
+					<pre><code>
+<script>
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+    });
+</script>
+					</code></pre>
+                    <p>Full list of configuration options available at: <a href="https://github.com/hakimel/reveal.js#configuration" target="_blank">github.com/hakimel/reveal.js#configuration</a></p>
+                    </div>
+				</section><!--Configuration-->
+                
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api" target="_blank">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding" target="_blank">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background" target="_blank">Parallax backgrounds</a></li>
+                        <li><a href="https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware" target="_blank">Plugins</a></li>
+                    </ul>
+                    <aside class="notes">
+                    Javascrip API: The Reveal object exposes a JavaScript API for controlling navigation and reading state
+                    Auto-progression: Presentations can be configured to progress through slides automatically, without any user input. 
+                    Parallax: parallax scrolling background, background moving at a slower rate to the foreground, creating a 3D effect as you scroll down the page.
+                    Plugins: Components that have been developed as extensions to reveal.js
+                    </aside>
+				</section>
+                <section>
+                    <h2><a href="https://github.com/hakimel/reveal.js/wiki/Example-Presentations" target="_blank"><span class="blue">Sample Presentations</span></a></h2>
+                        <p><a href="http://razvancaliman.com/fowd-london-2014/#/" target="_blank">Sample 1</a></p>
+                        <p><a href="http://aseemk.com/talks/neo4j-lessons-learned" target="_blank">Sample 2</a></p>
+                        <p><a href="http://slides.com/antonvoltchok/work_samples_av#/" target="_blank">Sample 3</a></p>
+                        <p><a href="http://david.coullet.info/#!/summary" target="_blank">Sample 4</a></p>
+                    
+                    
+                </section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com" target="_blank">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js" target="_blank">Source code &amp; documentation</a>
+					</p>
+				</section>
+                
+                <section>
+                    <h1>Questions<span class="red">?</span></h1>
+				</section>
+
+                
+            <div class="inline">
+            <ul class="inline">
+                <li class="inline"><a href="#"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/1"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/2"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/2/1"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/2/2"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/2/3"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/2/4"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/2/5"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/3"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/4"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/5"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/6"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/6/1"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/6/2"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/7"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/8"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/9"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/10"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/11"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/11/1"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/11/2"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/11/3"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/11/4"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/12"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/13"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/14"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/15"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/16"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/17"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>                
+                <li class="inline"><a href="#/18"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>           
+                <li class="inline"><a href="#/19"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>           
+                <li class="inline"><a href="#/20"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/21"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/22"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/23"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+<!--
+                <li class="inline"><a href="#/24"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+                <li class="inline"><a href="#/25"><img width="8px" height="8px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/1024px-Orange_circle_100%25.svg.png"></a></li>
+-->
+            </ul>
+    </div>
+                
+			</div>
+
+		</div>
+        
+
+		
+        <script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
